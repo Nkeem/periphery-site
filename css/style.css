@@ -137,3 +137,13 @@ body {
 .selection-tip {
     border-left: 4px solid #356bd6;
 }
+
+video,
+audio {
+    display: block;
+    width: 100%;
+}
+
+video {
+    height: auto;
+}

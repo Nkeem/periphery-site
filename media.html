@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Клавиатура в работе: видеоролик и запись звука набора текста с возможностью воспроизведения в браузере.">
+    <title>Медиа — Периферия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Периферия</h1>
+            <p>Каталог устройств для работы, учёбы и игр</p>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+        <div class="container">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="guide.html">Как выбрать</a>
+            <a href="media.html" aria-current="page">Медиа</a>
+            <a href="about.html">О проекте</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Медиа</h2>
+        <section class="card">
+            <h3>Клавиатура в работе</h3>
+            <p>Посмотрите, как выглядит набор текста на клавиатуре.</p>
+            <video controls preload="metadata" playsinline>
+                <source src="media/keyboard-demo.mp4.mp4" type="video/mp4">
+                Ваш браузер не поддерживает встроенное видео. Откройте файл по ссылке ниже.
+            </video>
+            <p><a class="details-link" href="media/keyboard-demo.mp4.mp4">Открыть видео (MP4)</a></p>
+        </section>
+
+        <section class="card">
+            <h3>Звук клавиатуры</h3>
+            <p>Послушайте отдельную запись звука клавиш при наборе текста.</p>
+            <audio controls preload="metadata">
+                <source src="media/mixkit-keyboard-typing-1386.wav" type="audio/wav">
+                Ваш браузер не поддерживает встроенное аудио. Откройте файл по ссылке ниже.
+            </audio>
+            <p><a class="details-link" href="media/mixkit-keyboard-typing-1386.wav">Открыть аудио (WAV)</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Периферия</p>
+        </div>
+    </footer>
+</body>
+
+</html>
