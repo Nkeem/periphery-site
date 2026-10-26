@@ -1,60 +1,288 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="О каталоге «Периферия»: мыши, клавиатуры, наушники, рекомендации по выбору и медиаматериалы.">
-
-    <title>О проекте — Периферия</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Периферия — независимый каталог устройств для рабочего пространства. Наш подход к выбору, сравнению и удобству.">
+    <meta property="og:title" content="О проекте — Периферия">
+    <meta property="og:description" content="Периферия — независимый каталог устройств для рабочего пространства. Наш подход к выбору, сравнению и удобству.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <title>
+      О проекте — Периферия
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+    <script src="js/app.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      К содержанию
+    </a>
     <header class="site-header">
-        <div class="container">
-            <h1>Периферия</h1>
-            <p>Каталог устройств для работы, учёбы и игр</p>
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Периферия — главная">
+          <span class="logo-symbol" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </span>
+          периферия
+        </a>
+        <nav class="main-nav" id="main-navigation" data-mobile-nav aria-label="Основная навигация">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html">
+            Каталог
+          </a>
+          <a href="guide.html">
+            Как выбрать
+          </a>
+          <a href="media.html">
+            Медиа
+          </a>
+          <a href="about.html" aria-current="page">
+            О проекте
+          </a>
+        </nav>
+        <div class="header-actions">
+          <a class="favorite-link" href="catalog.html?favorites=1" aria-label="Открыть избранное">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+            </svg>
+            <span>
+              Избранное
+            </span>
+            <span class="counter" data-favorite-count>
+              0
+            </span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 8h16M4 16h16"/>
+            </svg>
+          </button>
         </div>
+      </div>
     </header>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-        <div class="container">
-            <a href="index.html">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="guide.html">Как выбрать</a>
-            <a href="media.html">Медиа</a>
-            <a href="about.html" aria-current="page">О проекте</a>
+    <main id="main">
+      <section class="container page-hero story-hero">
+        <div>
+          <p class="eyebrow">
+            Периферия / Наш подход
+          </p>
+          <h1>
+            Близко
+            <br>
+            к твоему
+            <br>
+            делу.
+          </h1>
+          <p>
+            Рабочее пространство — продолжение твоих привычек. Мы собрали каталог, в котором легко разобраться в деталях и услышать собственные предпочтения.
+          </p>
         </div>
-    </nav>
-
-    <main class="container">
-        <article class="card">
-            <h2>О проекте</h2>
-            <p>
-                «Периферия» — каталог компьютерных мышей, клавиатур и наушников.
-                Здесь можно познакомиться с устройствами и их характеристиками,
-                разобраться в подключении и выбрать подходящий вариант для своих задач.
+        <div class="story-mark" aria-hidden="true">
+          <span class="logo-symbol" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </span>
+          <span class="eyebrow">
+            Меньше шума. Больше своего.
+          </span>
+        </div>
+      </section>
+      <section class="container section principles" aria-label="Принципы каталога">
+        <div class="principle" data-reveal>
+          <p class="eyebrow">
+            01 / Ясность
+          </p>
+          <h2>
+            Только по делу.
+          </h2>
+          <p>
+            Характеристики, которые помогают принять решение. Тип подключения, формат и назначение — вместо длинного списка обещаний.
+          </p>
+        </div>
+        <div class="principle" data-reveal>
+          <p class="eyebrow">
+            02 / Удобство
+          </p>
+          <h2>
+            Всё рядом.
+          </h2>
+          <p>
+            Сравнивай устройства, сохраняй понравившееся и возвращайся к выбору в своём темпе. Каталог, руководство и медиа связаны между собой.
+          </p>
+        </div>
+        <div class="principle" data-reveal>
+          <p class="eyebrow">
+            03 / Внимание
+          </p>
+          <h2>
+            С твоим участием.
+          </h2>
+          <p>
+            Удобство нельзя выбрать за тебя. Наше руководство подскажет, что проверить лично, чтобы устройство стало частью твоего рабочего дня.
+          </p>
+        </div>
+      </section>
+      <section class="container">
+        <div class="editorial-panel">
+          <div class="editorial-copy">
+            <p class="eyebrow">
+              Мыши. Клавиатуры. Наушники.
             </p>
-
-            <section>
-                <h3>Что есть на сайте</h3>
-                <ul>
-                    <li><a class="details-link" href="catalog.html">Каталог устройств</a> — карточки мыши, клавиатуры и наушников.</li>
-                    <li><a class="details-link" href="guide.html">Руководство по выбору</a> — советы об удобстве и совместимости подключения.</li>
-                    <li><a class="details-link" href="media.html">Медиа</a> — видео работы с клавиатурой и запись звука клавиш.</li>
-                </ul>
-            </section>
-
-        </article>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Периферия</p>
+            <h2>
+              Три детали.
+              <br>
+              Одна история.
+              <br>
+              Твоя.
+            </h2>
+            <p>
+              Начни с устройства, которого не хватает. Или посмотри на всё рабочее пространство целиком.
+            </p>
+            <a class="button button--lime" href="catalog.html">
+              К устройствам
+              <span class="arrow-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="editorial-art">
+            <img src="images/hero.webp" alt="Комплект устройств для рабочего пространства" width="1536" height="1024" loading="lazy">
+          </div>
         </div>
+      </section>
+      <section class="container section">
+        <div class="about-note">
+          <p>
+            «Периферия» — самостоятельный каталог. Здесь можно изучать устройства и сравнивать их характеристики. Оформление заказов и платежи на сайте не предусмотрены.
+          </p>
+          <p>
+            Избранное и список сравнения сохраняются в этом браузере. Регистрация не нужна. Изображения устройств созданы как визуальные иллюстрации каталога.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="logo" href="index.html" aria-label="Периферия — главная">
+              <span class="logo-symbol" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+              периферия
+            </a>
+            <p>
+              Вещи, с которыми хочется работать.
+              <br>
+              Выбор начинается с тебя.
+            </p>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Исследовать
+            </p>
+            <a href="catalog.html">
+              Все устройства
+            </a>
+            <a href="catalog.html?category=mouse">
+              Мыши
+            </a>
+            <a href="catalog.html?category=keyboard">
+              Клавиатуры
+            </a>
+            <a href="catalog.html?category=headphones">
+              Наушники
+            </a>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Полезное
+            </p>
+            <a href="guide.html">
+              Как выбрать
+            </a>
+            <a href="guide.html#finder">
+              Подобрать под себя
+            </a>
+            <a href="media.html">
+              Медиа
+            </a>
+            <a href="about.html">
+              О проекте
+            </a>
+          </div>
+        </div>
+        <div class="footer-word" aria-hidden="true">
+          периферия
+        </div>
+        <div class="footer-bottom">
+          <span>
+            © 2026 Периферия
+          </span>
+          <span>
+            Собрано с вниманием к деталям.
+          </span>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <div class="compare-bar" data-compare-bar hidden>
+      <span>
+        В сравнении:
+        <b data-compare-count>
+          0
+        </b>
+      </span>
+      <button class="button button--lime" type="button" data-open-compare>
+        Сравнить устройства
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M5 19 19 5M5 5h14v14"/>
+        </svg>
+      </button>
+      <button type="button" data-clear-compare>
+        Сбросить
+      </button>
+    </div>
+    <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
+      <div class="dialog-heading">
+        <h2 id="compare-title">
+          Всё рядом.
+        </h2>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Закрыть сравнение">
+          ✕
+        </button>
+      </div>
+      <div data-compare-content>
+      </div>
+    </dialog>
+    <div class="toast" data-toast role="status" hidden>
+    </div>
+  </body>
 </html>

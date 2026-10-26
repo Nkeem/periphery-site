@@ -1,60 +1,310 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Клавиатура в работе: видеоролик и запись звука набора текста с возможностью воспроизведения в браузере.">
-    <title>Медиа — Периферия</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Движение клавиш и звук набора текста. Посмотрите видео и послушайте запись работы с клавиатурой.">
+    <meta property="og:title" content="Увидеть и услышать — Периферия">
+    <meta property="og:description" content="Движение клавиш и звук набора текста. Посмотрите видео и послушайте запись работы с клавиатурой.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <title>
+      Увидеть и услышать — Периферия
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+    <script src="js/app.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      К содержанию
+    </a>
     <header class="site-header">
-        <div class="container">
-            <h1>Периферия</h1>
-            <p>Каталог устройств для работы, учёбы и игр</p>
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Периферия — главная">
+          <span class="logo-symbol" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </span>
+          периферия
+        </a>
+        <nav class="main-nav" id="main-navigation" data-mobile-nav aria-label="Основная навигация">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html">
+            Каталог
+          </a>
+          <a href="guide.html">
+            Как выбрать
+          </a>
+          <a href="media.html" aria-current="page">
+            Медиа
+          </a>
+          <a href="about.html">
+            О проекте
+          </a>
+        </nav>
+        <div class="header-actions">
+          <a class="favorite-link" href="catalog.html?favorites=1" aria-label="Открыть избранное">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+            </svg>
+            <span>
+              Избранное
+            </span>
+            <span class="counter" data-favorite-count>
+              0
+            </span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 8h16M4 16h16"/>
+            </svg>
+          </button>
         </div>
+      </div>
     </header>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-        <div class="container">
-            <a href="index.html">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="guide.html">Как выбрать</a>
-            <a href="media.html" aria-current="page">Медиа</a>
-            <a href="about.html">О проекте</a>
+    <main id="main">
+      <section class="container page-hero">
+        <div class="breadcrumb">
+          <a href="index.html">
+            Главная
+          </a>
+          <span>
+            /
+          </span>
+          <span>
+            Медиа
+          </span>
         </div>
-    </nav>
-
-    <main class="container">
-        <h2>Медиа</h2>
-        <section class="card">
-            <h3>Клавиатура в работе</h3>
-            <p>Посмотрите, как выглядит набор текста на клавиатуре.</p>
-            <video controls preload="metadata" playsinline>
-                <source src="media/keyboard-demo.mp4.mp4" type="video/mp4">
-                Ваш браузер не поддерживает встроенное видео. Откройте файл по ссылке ниже.
-            </video>
-            <p><a class="details-link" href="media/keyboard-demo.mp4.mp4">Открыть видео (MP4)</a></p>
+        <p class="eyebrow">
+          Детали, которые чувствуешь
+        </p>
+        <h1>
+          Увидеть движение.
+          <br>
+          Услышать ритм.
+        </h1>
+        <p>
+          Короткий взгляд на то, из чего складываются ощущения от рабочего места. Включай и прислушивайся.
+        </p>
+      </section>
+      <div class="container">
+        <section class="media-block">
+          <div class="media-block-heading">
+            <div>
+              <h2>
+                Клавиатура в работе.
+              </h2>
+              <p>
+                Набор текста крупным планом: движение пальцев, клавиши и ритм работы.
+              </p>
+            </div>
+            <span class="eyebrow muted">
+              01 / Движение
+            </span>
+          </div>
+          <video controls preload="metadata" playsinline aria-label="Клавиатура в работе">
+            <source src="media/keyboard-demo.mp4.mp4" type="video/mp4">
+            Браузер не поддерживает видео. Открой файл по ссылке ниже.
+          </video>
+          <a class="media-open" href="media/keyboard-demo.mp4.mp4">
+            Открыть видео отдельно ↗
+          </a>
         </section>
-
-        <section class="card">
-            <h3>Звук клавиатуры</h3>
-            <p>Послушайте отдельную запись звука клавиш при наборе текста.</p>
-            <audio controls preload="metadata">
-                <source src="media/mixkit-keyboard-typing-1386.wav" type="audio/wav">
-                Ваш браузер не поддерживает встроенное аудио. Откройте файл по ссылке ниже.
+        <section class="sound-panel">
+          <div class="sound-art" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </div>
+          <div>
+            <p class="eyebrow">
+              02 / Звук
+            </p>
+            <h2>
+              У каждого нажатия —
+              <br>
+              свой характер.
+            </h2>
+            <p>
+              Отдельная запись набора текста. Надень наушники и выбери комфортную громкость.
+            </p>
+            <audio controls preload="metadata" aria-label="Звук набора текста">
+              <source src="media/mixkit-keyboard-typing-1386.wav" type="audio/wav">
+              Браузер не поддерживает аудио. Открой файл по ссылке ниже.
             </audio>
-            <p><a class="details-link" href="media/mixkit-keyboard-typing-1386.wav">Открыть аудио (WAV)</a></p>
+            <a href="media/mixkit-keyboard-typing-1386.wav">
+              Открыть аудио отдельно ↗
+            </a>
+          </div>
         </section>
+        <p class="media-footnote">
+          Видео и аудио — самостоятельные материалы о работе с клавиатурой, не запись тестирования Type K1.
+        </p>
+      </div>
     </main>
-
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Периферия</p>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="logo" href="index.html" aria-label="Периферия — главная">
+              <span class="logo-symbol" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+              периферия
+            </a>
+            <p>
+              Вещи, с которыми хочется работать.
+              <br>
+              Выбор начинается с тебя.
+            </p>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Исследовать
+            </p>
+            <a href="catalog.html">
+              Все устройства
+            </a>
+            <a href="catalog.html?category=mouse">
+              Мыши
+            </a>
+            <a href="catalog.html?category=keyboard">
+              Клавиатуры
+            </a>
+            <a href="catalog.html?category=headphones">
+              Наушники
+            </a>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Полезное
+            </p>
+            <a href="guide.html">
+              Как выбрать
+            </a>
+            <a href="guide.html#finder">
+              Подобрать под себя
+            </a>
+            <a href="media.html">
+              Медиа
+            </a>
+            <a href="about.html">
+              О проекте
+            </a>
+          </div>
         </div>
+        <div class="footer-word" aria-hidden="true">
+          периферия
+        </div>
+        <div class="footer-bottom">
+          <span>
+            © 2026 Периферия
+          </span>
+          <span>
+            Собрано с вниманием к деталям.
+          </span>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <div class="compare-bar" data-compare-bar hidden>
+      <span>
+        В сравнении:
+        <b data-compare-count>
+          0
+        </b>
+      </span>
+      <button class="button button--lime" type="button" data-open-compare>
+        Сравнить устройства
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M5 19 19 5M5 5h14v14"/>
+        </svg>
+      </button>
+      <button type="button" data-clear-compare>
+        Сбросить
+      </button>
+    </div>
+    <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
+      <div class="dialog-heading">
+        <h2 id="compare-title">
+          Всё рядом.
+        </h2>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Закрыть сравнение">
+          ✕
+        </button>
+      </div>
+      <div data-compare-content>
+      </div>
+    </dialog>
+    <div class="toast" data-toast role="status" hidden>
+    </div>
+  </body>
 </html>

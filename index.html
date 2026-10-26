@@ -1,60 +1,519 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="Каталог компьютерных мышей, клавиатур и наушников.">
-
-    <title>Периферия — главная</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Мыши, клавиатуры и наушники для вашего рабочего пространства. Сравнивайте устройства, сохраняйте избранное и находите своё.">
+    <meta property="og:title" content="Периферия — вещи в твоём ритме">
+    <meta property="og:description" content="Мыши, клавиатуры и наушники для вашего рабочего пространства. Сравнивайте устройства, сохраняйте избранное и находите своё.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <title>
+      Периферия — вещи в твоём ритме
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <script src="js/app.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      К содержанию
+    </a>
     <header class="site-header">
-        <div class="container">
-            <h1>Периферия</h1>
-            <p>Каталог устройств для работы, учёбы и игр</p>
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Периферия — главная">
+          <span class="logo-symbol" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </span>
+          периферия
+        </a>
+        <nav class="main-nav" id="main-navigation" data-mobile-nav aria-label="Основная навигация">
+          <a href="index.html" aria-current="page">
+            Главная
+          </a>
+          <a href="catalog.html">
+            Каталог
+          </a>
+          <a href="guide.html">
+            Как выбрать
+          </a>
+          <a href="media.html">
+            Медиа
+          </a>
+          <a href="about.html">
+            О проекте
+          </a>
+        </nav>
+        <div class="header-actions">
+          <a class="favorite-link" href="catalog.html?favorites=1" aria-label="Открыть избранное">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+            </svg>
+            <span>
+              Избранное
+            </span>
+            <span class="counter" data-favorite-count>
+              0
+            </span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 8h16M4 16h16"/>
+            </svg>
+          </button>
         </div>
+      </div>
     </header>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-        <div class="container">
-            <a href="index.html" aria-current="page">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="guide.html">Как выбрать</a>
-            <a href="media.html">Медиа</a>
-            <a href="about.html">О проекте</a>
+    <main id="main">
+      <div class="container hero">
+        <div class="hero-topline eyebrow">
+          <span class="live-dot">
+            Вещи, с которыми хочется работать
+          </span>
+          <span>
+            Независимый каталог / 2026
+          </span>
         </div>
-    </nav>
-
-    <main class="container">
-        <section class="card" id="about">
-            <h2>О каталоге</h2>
-            <p>
-                Здесь собрана <strong>компьютерная периферия</strong>:
-                мыши, клавиатуры и наушники.
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>
+              Твой ритм.
+              <br>
+              Твоя
+              <br>
+              <em>
+                периферия.
+              </em>
+            </h1>
+            <p class="hero-description">
+              Для идей, которые не отпускают.
+              <br>
+              Для работы, которая увлекает.
+              <br>
+              Найди устройства, с которыми ты на одной волне.
             </p>
-            <p>
-                Каталог поможет познакомиться с устройствами
-                и их основными характеристиками.
+            <div class="hero-cta">
+              <a class="button " href="catalog.html">
+                Найти своё
+                <span class="arrow-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14"/>
+                  </svg>
+                </span>
+              </a>
+              <a class="hero-secondary" href="guide.html#finder">
+                Помочь с выбором
+              </a>
+            </div>
+            <div class="hero-notes">
+              <span>
+                <b>
+                  ↗
+                </b>
+                Выбор под твои задачи
+              </span>
+              <span>
+                <b>
+                  ≋
+                </b>
+                Понятное сравнение
+              </span>
+              <span>
+                <b>
+                  ♡
+                </b>
+                Сохранённые идеи
+              </span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="images/hero.webp" alt="Клавиатура, мышь и наушники в лаконичном рабочем пространстве" width="1536" height="1024" fetchpriority="high">
+            <span class="hero-sticker" aria-hidden="true">
+              ТВОЙ СЕТАП.
+              <br>
+              ТВОИ
+              <br>
+              ПРАВИЛА.
+            </span>
+            <a class="photo-caption" href="catalog.html">
+              <span>
+                <strong>
+                  Маленькие детали. Большая разница.
+                </strong>
+                <br>
+                Три способа сделать рабочее место своим.
+              </span>
+              <span class="caption-arrow">
+                ↗
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container category-strip" id="categories">
+        <div class="category-intro eyebrow">
+          С чего начнём?
+        </div>
+        <a href="catalog.html?category=mouse">
+          <span>
+            <small>
+              01 / КОЛЛЕКЦИЯ
+            </small>
+            <strong>
+              Мыши
+            </strong>
+          </span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14"/>
+          </svg>
+        </a>
+        <a href="catalog.html?category=keyboard">
+          <span>
+            <small>
+              02 / КОЛЛЕКЦИЯ
+            </small>
+            <strong>
+              Клавиатуры
+            </strong>
+          </span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14"/>
+          </svg>
+        </a>
+        <a href="catalog.html?category=headphones">
+          <span>
+            <small>
+              03 / КОЛЛЕКЦИЯ
+            </small>
+            <strong>
+              Наушники
+            </strong>
+          </span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M5 19 19 5M5 5h14v14"/>
+          </svg>
+        </a>
+      </div>
+      <section class="container section" data-reveal>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              Знакомство с коллекцией
             </p>
-        </section>
-
-        <section class="card" id="categories">
-            <h2>Категории устройств</h2>
-            <ul>
-                <li>Мыши — для управления курсором.</li>
-                <li>Клавиатуры — для ввода текста.</li>
-                <li>Наушники — для прослушивания звука и общения.</li>
-            </ul>
-        </section>
+            <h2>
+              Ничего лишнего.
+              <br>
+              Всё твоё.
+            </h2>
+          </div>
+          <a class="text-link" href="catalog.html">
+            Смотреть каталог
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14"/>
+            </svg>
+          </a>
+        </div>
+        <div class="product-grid" data-product-grid>
+          <article class="product-card">
+            <div class="product-visual">
+              <a href="mouse.html">
+                <img src="images/mouse-studio.webp" alt="Мыши: Click M1" width="1000" height="1000" loading="lazy">
+              </a>
+              <button class="icon-button favorite-button" data-favorite="mouse" aria-pressed="false" aria-label="Добавить Click M1 в избранное">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </button>
+              <span class="product-index">
+                01 / Мыши
+              </span>
+            </div>
+            <div class="product-meta">
+              <span class="eyebrow">
+                Мыши
+              </span>
+              <a class="product-title" href="mouse.html">
+                <h3>
+                  Click M1
+                </h3>
+              </a>
+              <p>
+                Свобода движения. Всё необходимое для повседневной работы.
+              </p>
+              <div class="product-bottom">
+                <span>
+                  Беспроводная · 3 кнопки
+                </span>
+                <button class="text-button" data-compare="mouse" aria-pressed="false">
+                  Сравнить +
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-visual">
+              <a href="keyboard.html">
+                <img src="images/keyboard-studio.webp" alt="Клавиатуры: Type K1" width="1000" height="1000" loading="lazy">
+              </a>
+              <button class="icon-button favorite-button" data-favorite="keyboard" aria-pressed="false" aria-label="Добавить Type K1 в избранное">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </button>
+              <span class="product-index">
+                02 / Клавиатуры
+              </span>
+            </div>
+            <div class="product-meta">
+              <span class="eyebrow">
+                Клавиатуры
+              </span>
+              <a class="product-title" href="keyboard.html">
+                <h3>
+                  Type K1
+                </h3>
+              </a>
+              <p>
+                Место для каждой клавиши. Полный формат для ваших мыслей.
+              </p>
+              <div class="product-bottom">
+                <span>
+                  Проводная · 104 клавиши
+                </span>
+                <button class="text-button" data-compare="keyboard" aria-pressed="false">
+                  Сравнить +
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-visual">
+              <a href="headphones.html">
+                <img src="images/headphones-studio.webp" alt="Наушники: Sound H1" width="1000" height="1000" loading="lazy">
+              </a>
+              <button class="icon-button favorite-button" data-favorite="headphones" aria-pressed="false" aria-label="Добавить Sound H1 в избранное">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </button>
+              <span class="product-index">
+                03 / Наушники
+              </span>
+            </div>
+            <div class="product-meta">
+              <span class="eyebrow">
+                Наушники
+              </span>
+              <a class="product-title" href="headphones.html">
+                <h3>
+                  Sound H1
+                </h3>
+              </a>
+              <p>
+                Ваше пространство звука. Для музыки, разговоров и концентрации.
+              </p>
+              <div class="product-bottom">
+                <span>
+                  Закрытые · с микрофоном
+                </span>
+                <button class="text-button" data-compare="headphones" aria-pressed="false">
+                  Сравнить +
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="container" data-reveal>
+        <div class="editorial-panel">
+          <div class="editorial-copy">
+            <p class="eyebrow">
+              Не знаешь, с чего начать?
+            </p>
+            <h2>
+              Не больше
+              <br>
+              функций.
+              <br>
+              Больше смысла.
+            </h2>
+            <p>
+              Размер ладони, привычный расклад, любимый ритм. Хороший выбор начинается с тебя — мы поможем разобраться в деталях.
+            </p>
+            <a class="button button--lime" href="guide.html">
+              Гид по выбору
+              <span class="arrow-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="editorial-art">
+            <img src="images/keyboard-studio.webp" alt="Полноразмерная клавиатура с акцентной клавишей" width="1000" height="1000" loading="lazy">
+            <span class="mini-label">
+              01 — Сначала удобство. Потом всё остальное.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="container section" data-reveal>
+        <div class="manifesto">
+          <p class="eyebrow">
+            Наш взгляд на вещи
+          </p>
+          <p class="manifesto-text">
+            Хорошее рабочее место —
+            <br>
+            это когда техника
+            <span>
+              не отвлекает,
+            </span>
+            <br>
+            а помогает быть собой.
+          </p>
+        </div>
+      </section>
+      <section class="container media-teaser" data-reveal>
+        <a href="media.html" class="teaser-image" aria-label="Перейти к видео и звуку клавиатуры">
+          <img src="images/hero.webp" alt="Детали рабочего пространства" width="1536" height="1024" loading="lazy">
+          <span class="teaser-play">
+            <span aria-hidden="true">
+              ▷
+            </span>
+          </span>
+        </a>
+        <div class="teaser-copy">
+          <p class="eyebrow">
+            За пределами характеристик
+          </p>
+          <h2>
+            Услышать.
+            <br>
+            Почувствовать.
+          </h2>
+          <p>
+            У каждого нажатия — свой характер. Посмотри на клавиатуру в движении и послушай ритм набора текста.
+          </p>
+          <a class="text-link" href="media.html">
+            Включить ощущения
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14"/>
+            </svg>
+          </a>
+        </div>
+      </section>
     </main>
-
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Периферия</p>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="logo" href="index.html" aria-label="Периферия — главная">
+              <span class="logo-symbol" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+              периферия
+            </a>
+            <p>
+              Вещи, с которыми хочется работать.
+              <br>
+              Выбор начинается с тебя.
+            </p>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Исследовать
+            </p>
+            <a href="catalog.html">
+              Все устройства
+            </a>
+            <a href="catalog.html?category=mouse">
+              Мыши
+            </a>
+            <a href="catalog.html?category=keyboard">
+              Клавиатуры
+            </a>
+            <a href="catalog.html?category=headphones">
+              Наушники
+            </a>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Полезное
+            </p>
+            <a href="guide.html">
+              Как выбрать
+            </a>
+            <a href="guide.html#finder">
+              Подобрать под себя
+            </a>
+            <a href="media.html">
+              Медиа
+            </a>
+            <a href="about.html">
+              О проекте
+            </a>
+          </div>
         </div>
+        <div class="footer-word" aria-hidden="true">
+          периферия
+        </div>
+        <div class="footer-bottom">
+          <span>
+            © 2026 Периферия
+          </span>
+          <span>
+            Собрано с вниманием к деталям.
+          </span>
+        </div>
+      </div>
     </footer>
-</body>
+    <div class="compare-bar" data-compare-bar hidden>
+      <span>
+        В сравнении:
+        <b data-compare-count>
+          0
+        </b>
+      </span>
+      <button class="button button--lime" type="button" data-open-compare>
+        Сравнить устройства
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M5 19 19 5M5 5h14v14"/>
+        </svg>
+      </button>
+      <button type="button" data-clear-compare>
+        Сбросить
+      </button>
+    </div>
+    <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
+      <div class="dialog-heading">
+        <h2 id="compare-title">
+          Всё рядом.
+        </h2>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Закрыть сравнение">
+          ✕
+        </button>
+      </div>
+      <div data-compare-content>
+      </div>
+    </dialog>
+    <div class="toast" data-toast role="status" hidden>
+    </div>
+  </body>
 </html>

@@ -1,83 +1,394 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Каталог компьютерных мышей, клавиатур и наушников.">
-
-    <title>Каталог — Периферия</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Выберите мышь, клавиатуру или наушники. Поиск, фильтры, избранное и сравнение характеристик в одном каталоге.">
+    <meta property="og:title" content="Каталог устройств — Периферия">
+    <meta property="og:description" content="Выберите мышь, клавиатуру или наушники. Поиск, фильтры, избранное и сравнение характеристик в одном каталоге.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <title>
+      Каталог устройств — Периферия
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+    <script src="js/app.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      К содержанию
+    </a>
     <header class="site-header">
-        <div class="container">
-            <h1>Периферия</h1>
-            <p>Каталог устройств для работы, учёбы и игр</p>
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Периферия — главная">
+          <span class="logo-symbol" aria-hidden="true">
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+            <i>
+            </i>
+          </span>
+          периферия
+        </a>
+        <nav class="main-nav" id="main-navigation" data-mobile-nav aria-label="Основная навигация">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html" aria-current="page">
+            Каталог
+          </a>
+          <a href="guide.html">
+            Как выбрать
+          </a>
+          <a href="media.html">
+            Медиа
+          </a>
+          <a href="about.html">
+            О проекте
+          </a>
+        </nav>
+        <div class="header-actions">
+          <a class="favorite-link" href="catalog.html?favorites=1" aria-label="Открыть избранное">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+            </svg>
+            <span>
+              Избранное
+            </span>
+            <span class="counter" data-favorite-count>
+              0
+            </span>
+          </a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false" aria-label="Открыть меню">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 8h16M4 16h16"/>
+            </svg>
+          </button>
         </div>
+      </div>
     </header>
-
-    <nav class="site-nav" aria-label="Основная навигация">
-        <div class="container">
-            <a href="index.html">Главная</a>
-            <a href="catalog.html" aria-current="page">Каталог</a>
-            <a href="guide.html">Как выбрать</a>
-            <a href="media.html">Медиа</a>
-            <a href="about.html">О проекте</a>
+    <main id="main">
+      <section class="container page-hero">
+        <div class="breadcrumb">
+          <a href="index.html">
+            Главная
+          </a>
+          <span>
+            /
+          </span>
+          <span>
+            Каталог
+          </span>
         </div>
-    </nav>
-
-    <main class="container">
-        <section class="catalog-section">
-            <h2>Каталог устройств</h2>
-            <p>Мыши, клавиатуры и наушники для разных задач.</p>
-
-            <div class="product-grid">
-                <article class="card product-card">
-                    <img class="product-image" src="images/mouse.jpg" alt="Беспроводная компьютерная мышь">
-                    <h3>Мышь Click M1</h3>
-                    <p>Беспроводная мышь для повседневной работы.</p>
-                    <ul>
-                        <li>Подключение: USB-приёмник</li>
-                        <li>Количество кнопок: 3</li>
-                        <li>Питание: батарейка AA</li>
-                    </ul>
-                    <a class="details-link" href="mouse.html">Подробнее о мыши</a>
-                </article>
-
-                <article class="card product-card">
-                    <img class="product-image" src="images/keyboard.jpg"
-                        alt="Полноразмерная клавиатура с цифровым блоком">
-                    <h3>Клавиатура Type K1</h3>
-                    <p>Полноразмерная клавиатура с цифровым блоком.</p>
-                    <ul>
-                        <li>Подключение: проводное USB</li>
-                        <li>Тип: мембранная</li>
-                        <li>Количество клавиш: 104</li>
-                    </ul>
-                </article>
-
-                <article class="card product-card">
-                    <img class="product-image" src="images/headphones.jpg" alt="Полноразмерные наушники с микрофоном">
-                    <h3>Наушники Sound H1</h3>
-                    <p>Полноразмерные наушники с микрофоном.</p>
-                    <ul>
-                        <li>Подключение: разъём 3,5 мм</li>
-                        <li>Тип: закрытые</li>
-                        <li>Микрофон: встроенный</li>
-                    </ul>
-                </article>
+        <p class="eyebrow">
+          Устройства для твоего пространства
+        </p>
+        <div class="page-hero-row">
+          <div>
+            <h1>
+              Найди своё.
+            </h1>
+            <p>
+              Три устройства. Три разных роли.
+              <br>
+              Один сетап, в котором всё на своём месте.
+            </p>
+          </div>
+          <span class="large-counter" aria-label="Три устройства">
+            03
+          </span>
+        </div>
+      </section>
+      <section class="container" aria-label="Каталог устройств">
+      <h2 class="sr-only">Устройства каталога</h2>
+        <div class="catalog-tools">
+          <label class="search-field">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="10" cy="10" r="6"/>
+              <path d="m15 15 5 5"/>
+            </svg>
+            <input type="search" data-search aria-label="Поиск устройств" placeholder="Название, устройство или подключение…" autocomplete="off">
+          </label>
+          <div class="catalog-filters" aria-label="Категория устройства">
+            <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">
+              Все устройства
+            </button>
+            <button type="button" class="filter-button" data-filter="mouse" aria-pressed="false">
+              Мыши
+            </button>
+            <button type="button" class="filter-button" data-filter="keyboard" aria-pressed="false">
+              Клавиатуры
+            </button>
+            <button type="button" class="filter-button" data-filter="headphones" aria-pressed="false">
+              Наушники
+            </button>
+          </div>
+        </div>
+        <div class="catalog-subline">
+          <span data-result-count role="status" aria-live="polite">
+            3 устройства
+          </span>
+          <button type="button" class="text-button" data-favorites-filter aria-pressed="false">
+            ♡ Только избранное
+          </button>
+          <label>
+            Порядок:
+            <select data-sort aria-label="Сортировка устройств">
+              <option value="default">
+                По умолчанию
+              </option>
+              <option value="name">
+                По названию
+              </option>
+            </select>
+          </label>
+        </div>
+        <div class="product-grid" data-product-grid>
+          <article class="product-card">
+            <div class="product-visual">
+              <a href="mouse.html">
+                <img src="images/mouse-studio.webp" alt="Мыши: Click M1" width="1000" height="1000" loading="lazy">
+              </a>
+              <button class="icon-button favorite-button" data-favorite="mouse" aria-pressed="false" aria-label="Добавить Click M1 в избранное">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </button>
+              <span class="product-index">
+                01 / Мыши
+              </span>
             </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Периферия</p>
+            <div class="product-meta">
+              <span class="eyebrow">
+                Мыши
+              </span>
+              <a class="product-title" href="mouse.html">
+                <h3>
+                  Click M1
+                </h3>
+              </a>
+              <p>
+                Свобода движения. Всё необходимое для повседневной работы.
+              </p>
+              <div class="product-bottom">
+                <span>
+                  Беспроводная · 3 кнопки
+                </span>
+                <button class="text-button" data-compare="mouse" aria-pressed="false">
+                  Сравнить +
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-visual">
+              <a href="keyboard.html">
+                <img src="images/keyboard-studio.webp" alt="Клавиатуры: Type K1" width="1000" height="1000" loading="lazy">
+              </a>
+              <button class="icon-button favorite-button" data-favorite="keyboard" aria-pressed="false" aria-label="Добавить Type K1 в избранное">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </button>
+              <span class="product-index">
+                02 / Клавиатуры
+              </span>
+            </div>
+            <div class="product-meta">
+              <span class="eyebrow">
+                Клавиатуры
+              </span>
+              <a class="product-title" href="keyboard.html">
+                <h3>
+                  Type K1
+                </h3>
+              </a>
+              <p>
+                Место для каждой клавиши. Полный формат для ваших мыслей.
+              </p>
+              <div class="product-bottom">
+                <span>
+                  Проводная · 104 клавиши
+                </span>
+                <button class="text-button" data-compare="keyboard" aria-pressed="false">
+                  Сравнить +
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-visual">
+              <a href="headphones.html">
+                <img src="images/headphones-studio.webp" alt="Наушники: Sound H1" width="1000" height="1000" loading="lazy">
+              </a>
+              <button class="icon-button favorite-button" data-favorite="headphones" aria-pressed="false" aria-label="Добавить Sound H1 в избранное">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </button>
+              <span class="product-index">
+                03 / Наушники
+              </span>
+            </div>
+            <div class="product-meta">
+              <span class="eyebrow">
+                Наушники
+              </span>
+              <a class="product-title" href="headphones.html">
+                <h3>
+                  Sound H1
+                </h3>
+              </a>
+              <p>
+                Ваше пространство звука. Для музыки, разговоров и концентрации.
+              </p>
+              <div class="product-bottom">
+                <span>
+                  Закрытые · с микрофоном
+                </span>
+                <button class="text-button" data-compare="headphones" aria-pressed="false">
+                  Сравнить +
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
+        <div class="empty-state" data-empty-state hidden>
+          <h2>
+            Пока ничего.
+          </h2>
+          <p>
+            Попробуй другой запрос или сбрось фильтры — подходящее найдётся.
+          </p>
+          <button class="button" type="button" data-reset-filters>
+            Показать все устройства
+          </button>
+        </div>
+        <noscript>
+          <p class="media-footnote">
+            Карточки доступны без JavaScript. Для поиска, избранного и сравнения включите JavaScript в браузере.
+          </p>
+        </noscript>
+        <aside class="catalog-note">
+          <p>
+            Сохраняй понравившееся в избранное или добавляй устройства в сравнение. Твой выбор останется в этом браузере.
+          </p>
+          <a class="text-link" href="guide.html#finder">
+            Подобрать под себя
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14"/>
+            </svg>
+          </a>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="logo" href="index.html" aria-label="Периферия — главная">
+              <span class="logo-symbol" aria-hidden="true">
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+                <i>
+                </i>
+              </span>
+              периферия
+            </a>
+            <p>
+              Вещи, с которыми хочется работать.
+              <br>
+              Выбор начинается с тебя.
+            </p>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Исследовать
+            </p>
+            <a href="catalog.html">
+              Все устройства
+            </a>
+            <a href="catalog.html?category=mouse">
+              Мыши
+            </a>
+            <a href="catalog.html?category=keyboard">
+              Клавиатуры
+            </a>
+            <a href="catalog.html?category=headphones">
+              Наушники
+            </a>
+          </div>
+          <div class="footer-links">
+            <p class="eyebrow">
+              Полезное
+            </p>
+            <a href="guide.html">
+              Как выбрать
+            </a>
+            <a href="guide.html#finder">
+              Подобрать под себя
+            </a>
+            <a href="media.html">
+              Медиа
+            </a>
+            <a href="about.html">
+              О проекте
+            </a>
+          </div>
+        </div>
+        <div class="footer-word" aria-hidden="true">
+          периферия
+        </div>
+        <div class="footer-bottom">
+          <span>
+            © 2026 Периферия
+          </span>
+          <span>
+            Собрано с вниманием к деталям.
+          </span>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <div class="compare-bar" data-compare-bar hidden>
+      <span>
+        В сравнении:
+        <b data-compare-count>
+          0
+        </b>
+      </span>
+      <button class="button button--lime" type="button" data-open-compare>
+        Сравнить устройства
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M5 19 19 5M5 5h14v14"/>
+        </svg>
+      </button>
+      <button type="button" data-clear-compare>
+        Сбросить
+      </button>
+    </div>
+    <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
+      <div class="dialog-heading">
+        <h2 id="compare-title">
+          Всё рядом.
+        </h2>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Закрыть сравнение">
+          ✕
+        </button>
+      </div>
+      <div data-compare-content>
+      </div>
+    </dialog>
+    <div class="toast" data-toast role="status" hidden>
+    </div>
+  </body>
 </html>
